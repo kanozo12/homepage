@@ -42,6 +42,7 @@ app.use(function (req, res, next) {
 
 app.use(express.static(path.join(__dirname + '/')));
 
+// 라우터 오류
 app.use('/', indexRouter);
 app.use('/error', errorRouter);
 app.use('/main', mainRouter);
