@@ -23,7 +23,6 @@ const indexRouter = require('./router/IndexRouter');
 const errorRouter = require('./router/ErrorRouter');
 const mainRouter = require('./router/MainRouter');
 
-
 app.set('port', 80);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
