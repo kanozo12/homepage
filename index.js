@@ -21,7 +21,8 @@ conn.query('USE kanozo12');
 // 라우터 분리
 const indexRouter = require('./router/IndexRouter');
 const errorRouter = require('./router/ErrorRouter');
-const mainRouter = require('./router/MainRouter');
+const companyRouter = require('./router/CompanyRouter');
+const supportRouter = require('./router/SupportRouter');
 
 app.set('port', 80);
 app.set('views', path.join(__dirname, 'views'));
@@ -45,7 +46,8 @@ app.use(express.static(path.join(__dirname + '/')));
 // 라우터 오류
 app.use('/', indexRouter);
 app.use('/error', errorRouter);
-app.use('/main', mainRouter);
+app.use('/company', companyRouter);
+app.use('/support', supportRouter);
 
 http.createServer(app).listen(app.get('port'), function () {
     console.log("Express 엔진이 port" + app.get('port') + "에서 실행중입니다.");
