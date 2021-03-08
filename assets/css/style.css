@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+    text-decoration: none;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 120px;
+
+    border-bottom: 1px solid #dfdfdf;
+
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.4s;
+    transition-timing-function:ease;
+}
+
+.active{
+    background-color:rgba(0,0,0,.8);
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.4s;
+    transition-timing-function:ease;
+}
+
+section{
+    height: 1400px;
+}
