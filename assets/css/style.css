@@ -13,6 +13,7 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
 
     width: 100%;
     height: 100px;
@@ -185,11 +186,68 @@ nav{
     display: flex;
     flex-direction: column;
 }
-.content .location-content .location-subcontent{
-    display: flex;
-    flex-direction: column;
-}
 /* company */
+
+/* kakao map */
+.content .location-content #map{
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+}
+/* kakao map */
+
+.content .location-content .location-list ul li{
+    padding: 50px;
+    border-bottom: 1px solid #dfdfdf;
+
+    display: flex;
+}
+.content .location-content .location-list ul li:last-child{
+    border-bottom: none;
+}
+
+.content .location-content .location-list ul li .title{
+    min-width: 180px;
+
+    margin-right: 20px;
+    border-right: 1px solid #dfdfdf;
+
+    font-size : 30px;
+    font-weight: lighter;
+    color: #333;
+}
+
+.content .location-content .location-list ul li .item-layout{
+    flex:1;
+}
+
+.content .location-content .location-list ul li .item,
+.content .location-content .location-list ul li .item-layout .item{
+    flex:1;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.content .location-content .location-list ul li .item-layout .item:nth-child(2){
+    padding: 30px 0px;
+}
+
+.content .location-content .location-list ul li .item img,
+.content .location-content .location-list ul li .item-layout .item img{
+    width: 36px;
+    height: 36px;
+}
+.content .location-content .location-list ul li .item span,
+.content .location-content .location-list ul li .item-layout .item span{
+    font-size:16px;
+
+    padding-left: 8px;
+}
+
+
+
+
 
 /* footer */
 footer{
@@ -204,11 +262,3 @@ footer{
     color: #fff;
 }
 /* footer */
-
-/* google map */
-#map{
-    width: 100%;
-    height: 600px;
-    margin: 0 auto;
-}
-/* google map */

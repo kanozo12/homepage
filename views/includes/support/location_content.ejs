@@ -2,14 +2,14 @@
     <script>
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
         mapOption = { 
-            center: new kakao.maps.LatLng(37.5382387, 127.0752164), // 지도의 중심좌표
+            center: new kakao.maps.LatLng(37.538235, 127.077460), // 지도의 중심좌표
             level: 3 // 지도의 확대 레벨
         };
 
         var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 
         // 마커가 표시될 위치입니다 
-        var markerPosition  = new kakao.maps.LatLng(37.5382387, 127.0752164); 
+        var markerPosition  = new kakao.maps.LatLng(37.538235, 127.077460); 
 
         // 마커를 생성합니다
         var marker = new kakao.maps.Marker({
@@ -22,6 +22,47 @@
         // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
         // marker.setMap(null);  
     </script>
+    <div class="location-list">
+        <ul>
+            <li>
+                <div class="title">주소</div>
+                <div class="item">
+                    <img src="../../../assets/icon/location.svg" alt="location">
+                    <span>서울특별시 광진구 아차산로 309, 남장빌딩 2층</span>
+                </div>
+            </li>
+            <li>
+                <div class="title">연락처</div>
+                <div class="item-layout">
+                    <div class="item">
+                        <img src="../../../assets/icon/.svg" alt="contact">
+                        <span>02-402-8054</span>
+                    </div>
+                    <div class="item">
+                        <img src="../../../assets/icon/.svg" alt="fax">
+                        <span>02-402-8055</span>
+                    </div>
+                    <div class="item">
+                        <img src="../../../assets/icon/mail.svg" alt="mail">
+                        <span>solmoit01@solmo.co.kr</span>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="title">교통편</div>
+                <div class="item-layout">
+                    <div class="item">
+                        <img src="../../../assets/icon/.svg" alt="bus">
+                        <span>02-402-8054</span>
+                    </div>
+                    <div class="item">
+                        <img src="../../../assets/icon/.svg" alt="subway">
+                        <span>02-402-8055</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 
 
 
