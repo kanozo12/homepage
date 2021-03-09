@@ -123,6 +123,10 @@ nav{
     color: #333;
 }
 
+.content .ceo-content p span{
+    font-size:20px;
+}
+
 .content .ceo-content .ceo-img{
     flex:2;
 }
@@ -190,11 +194,16 @@ nav{
 
 /* kakao map */
 .content .location-content #map{
-    width: 100%;
-    height: 600px;
+    width: 75%;
+    height: 400px;
     margin: 0 auto;
 }
 /* kakao map */
+
+.content .location-content .location-list{
+    width: 75%;
+    margin: 0 auto;
+}
 
 .content .location-content .location-list ul li{
     padding: 50px;
@@ -212,7 +221,7 @@ nav{
     margin-right: 20px;
     border-right: 1px solid #dfdfdf;
 
-    font-size : 30px;
+    font-size : 28px;
     font-weight: lighter;
     color: #333;
 }
