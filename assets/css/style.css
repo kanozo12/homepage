@@ -40,6 +40,8 @@ header {
     align-items: center;
 
     color: #333;
+    
+    z-index: 9999;
 }
 
 .main-logo {
