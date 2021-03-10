@@ -61,22 +61,79 @@ header {
 
 }
 
+
+/* 메뉴 제작 */
 nav {
     flex: 4;
+    height: 100%;
+}
+
+nav ul{
+    width: 50%;
+    margin: 0 auto;
+
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul .li{
+    float: left;
+    flex:1;
+
+    position: relative;
+}
+
+nav ul .li:hover{
+    background-color: rgba(0,0,0,0.03);
+}
+
+nav ul .li .title{
+    width: 100%;
+    height: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-nav > ul {
-    width: 60%;
+nav ul .li .sub-nav{
+    position: absolute;
+    overflow: hidden;
+
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.125rem;
+    flex-direction: column;
+
+    min-width: 200px;
+    background-color: #fff;
+
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }
 
+nav ul .li .sub-nav{
+    display: none;
+    border: 1px solid #dfdfdf;
+    border-top: none;
+}
+
+nav ul .li:hover .sub-nav{
+    display: flex;
+}
+
+nav ul .li .sub-nav a{
+    padding: 15px 30px;
+    color: #000;
+}
+
+nav ul .li .sub-nav a:hover{
+    background-color: #f3f3f3;
+}
+
+
+/* 메뉴 제작 */
 .active{
     background-color:rgba(0,0,0,0.4);
     -webkit-transition-duration:0.4s;
