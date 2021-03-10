@@ -203,6 +203,8 @@ nav ul .li .sub-nav a:hover{
 }
 
 .content{
+    position: relative;
+
     width: 70%;
     margin: 0 auto;
 
@@ -308,6 +310,7 @@ nav ul .li .sub-nav a:hover{
     border-bottom: 1px solid #222;
     padding: 20px 0px;
 
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -330,6 +333,9 @@ nav ul .li .sub-nav a:hover{
     width: 75%;
     height: 400px;
     margin: 0 auto;
+
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
 }
 /* kakao map */
 
@@ -357,7 +363,7 @@ nav ul .li .sub-nav a:hover{
     font-size : 28px;
     font-weight: lighter;
     color: #333;
-}
+}   
 
 .content .location-content .location-list ul li .item-layout{
     flex:1;
@@ -370,9 +376,12 @@ nav ul .li .sub-nav a:hover{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    padding-bottom: 30px;
 }
-.content .location-content .location-list ul li .item-layout .item:nth-child(2){
-    padding: 30px 0px;
+.content .location-content .location-list ul li .item:last-child,
+.content .location-content .location-list ul li .item-layout .item:last-child{
+    padding-bottom: 0px;
 }
 
 .content .location-content .location-list ul li .item img,
@@ -389,6 +398,79 @@ nav ul .li .sub-nav a:hover{
 
 
 
+
+/* sitemap */
+.content .sitemap-content .sitemap-layout{
+    
+}
+
+.content .sitemap-content .sitemap-layout .sitemap-item{
+    display: flex;
+
+    padding: 50px 0px;
+
+    border-top: 1px solid #dfdfdf;
+}
+
+.content .sitemap-content .sitemap-layout .sitemap-item h2{
+    min-width: 250px;
+    margin-right: 20px;
+    border-right: 1px solid #dfdfdf;
+
+    font-size: 32px;
+    font-weight: lighter;
+    color: #333;
+}
+
+.content .sitemap-content .sitemap-layout .sitemap-item ul{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .sitemap-content .sitemap-layout .sitemap-item ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-bottom: 50px;
+}
+
+.content .sitemap-content .sitemap-layout .sitemap-item ul li:last-child{
+    padding-bottom: 0;
+}
+
+.content .sitemap-content .sitemap-layout .sitemap-item ul li a{
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #333;
+}
+
+.content .sitemap-content .sitemap-layout .sitemap-item ul li a:hover{
+    text-decoration: underline;
+}
+
+.sitemap-layout .border{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sitemap-layout .border .border-main{
+    min-width: 250px;
+    height: 3px;
+    background-color: #286592;
+
+    position: relative;
+    z-index: 2;
+}
+
+.sitemap-layout .border .border-sub{
+    flex:1;
+    height: 3px;
+    background-color: #dfdfdf;
+}
+/* sitemap */
 
 
 /* footer */
