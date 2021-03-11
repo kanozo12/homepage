@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 ul, li {
@@ -111,9 +113,7 @@ nav ul .li .sub-nav{
     border-radius: 8px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
-}
 
-nav ul .li .sub-nav{
     display: none;
     border: 1px solid #dfdfdf;
     border-top: none;
@@ -126,6 +126,8 @@ nav ul .li:hover .sub-nav{
 nav ul .li .sub-nav a{
     padding: 15px 30px;
     color: #000;
+
+    transition: all 0.3s;
 }
 
 nav ul .li .sub-nav a:hover{
@@ -145,6 +147,8 @@ nav ul .li .sub-nav a:hover{
 
 .icon {
     flex: 1;
+    height: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,15 +156,65 @@ nav ul .li .sub-nav a:hover{
 
 .icon-container {
     width: 50%;
+    height: 100%;
+
     display: flex;
     justify-content: space-between;
 }
 
+.icon-container .tag{
+    position: relative;
+
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container .tag .sub-nav{
+    position: absolute;
+    top: 100px;
+    left: -30px;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 200px;
+    background-color: #fff;
+
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+
+    display: none;
+    border: 1px solid #dfdfdf;
+    border-top: none;
+}
+
+.icon-container .tag .sub-nav a{
+    padding: 15px 30px;
+    color: #000;
+    transition: all 0.3s;
+}
+
+.icon .icon-container .tag .sub-nav a:hover{
+    background-color: #f3f3f3;
+}
+
+.icon .icon-container .tag:hover .sub-nav{
+    display: flex;
+}
+
+
+
 .icon img {
     width: 30px;
-    height: 50px;
+
     object-fit: contain;
-    
+    cursor: pointer;
 }
 
 #banner {
@@ -177,11 +231,16 @@ nav ul .li .sub-nav a:hover{
 }
 
 #banner > .banner-btn {
-    border: solid 1px rgba(255,255,255,0.7);
+    border: solid 2px rgba(255,255,255,0.7);
     border-radius: 22px;
     margin-top: 30px;
-    padding: 15px;
     padding: 0 32px 0 25px;
+
+    transition: all 0.3s;
+}
+
+#banner > .banner-btn:hover{
+    background-color: rgba(0,0,0,0.4);
 }
 
 #banner > .banner-btn p {

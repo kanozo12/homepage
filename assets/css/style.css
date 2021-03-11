@@ -163,7 +163,7 @@ nav ul .li .sub-nav a:hover{
     width: 30px;
     height: 50px;
     object-fit: contain;
-    
+    cursor: pointer;
 }
 
 
